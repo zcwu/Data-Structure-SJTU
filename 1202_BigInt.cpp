@@ -68,6 +68,9 @@ void list::create(int a)
     tmp = new node;
     tmp->date = a;
 
+
+
+
     tmp->prev = tail->prev;
     tmp->next = tail;
     tail->prev->next = tmp;
@@ -99,7 +102,7 @@ void list::display()
 list list::add(const list &other)
 {
     list tmp;
-    int sum, carry = 0; 
+    int sum, carry = 0;
 
     node *p, *q, *r;
     p = tail->prev;
@@ -140,7 +143,7 @@ list list::add(const list &other)
 
             else {tmp.oppo_create(sum); carry = 0;}
 
-            p = p->prev; 
+            p = p->prev;
         }
     }
 
