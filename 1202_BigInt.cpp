@@ -99,7 +99,7 @@ void list::display()
 list list::add(const list &other)
 {
     list tmp;
-    int sum, carry = 0;
+    int sum, carry = 0; 
 
     node *p, *q, *r;
     p = tail->prev;
